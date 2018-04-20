@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.a1:link
+{
+	color:yellow;
+}
+.a1:hover{
+    background: red;
+    color: white;
+    font-size: 20px;
+}
+
+.HovP:hover{
+    background: yellow;
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.HovP:active{
+    background: blue;
+}
+
+.a1:active
+{
+	color:black;
+}
+
+a.a2:link
+{
+    background-color: #98BF21;
+    width: 150px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+}
+a.a2:hover
+{
+    color: yellow;
+    background-color: #7A991A;	
+    text-decoration: underline;
+    font-size: 150%;
+    width: 200px;
+    transition: 1s all ease;
+}
+a.a2:active{
+    background: red;
+}
+.a1:visited
+{
+	font-family: monospace !important;
+    font-size: 10px;
+}
+

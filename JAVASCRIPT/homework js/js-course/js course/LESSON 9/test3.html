@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS Lesson 9</title>
+		<meta charset="utf8">
+        <style>
+            p{
+                width: 500px;
+                height: 20px;
+                background-color: black;
+            }
+        </style>
+	</head>
+	<body>
+        <p class="para"></p>
+        <p class="para"></p>
+        <p class="para"></p>
+        <p class="para"></p>
+        <p class="para"></p>
+        <p class="para"></p>
+        <p class="para"></p>
+        <p class="para"></p>
+        <p class="para"></p>
+        <p class="para"></p>
+        <input type="button" onclick="kochak()" value="kochak">
+        <script>
+            function col(){
+                var guyn = "#";
+                for(var i=0; i<6; i++){
+                    var arr=["A", "B", "C", "D", "E", "F", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0",]
+                    var k=arr[Math.floor(Math.random()*16)];
+                    guyn+=k;
+                }
+                return guyn;
+            }
+            
+            function kochak(){
+                var arr = document.getElementsByClassName("para");
+                arr[Math.floor(Math.random()*10)].style.backgroundColor=col();
+            }
+        </script>
+	</body>	
+</html>

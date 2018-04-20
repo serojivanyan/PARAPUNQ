@@ -1,0 +1,16 @@
+.p1{
+    font-size: 20px;
+}
+#mec{
+    height: 500px;
+    color: blue;
+    text-align: center;
+    background-size: 22%;
+    background: aliceblue url(01/01.png) no-repeat scroll center;
+}
+
+/*
+    center--------  margin: 0 auto;     
+    right-----------   float: right;
+    overflow: auto;
+*/

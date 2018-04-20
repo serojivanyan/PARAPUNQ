@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/new.js"></script>
+     <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <article id="time">
+        <div id="center"></div>
+        <div id="second"></div>
+        <div id="minute"></div>
+        <div id="hour"></div>
+        
+    </article>
+    <!-- <div id="myDiv"></div> -->
+    <script>
+        var myLine = document.createElement('div')
+            myLine.setAttribute('id','myline');
+            document.getElementById('time').appendChild(myLine)
+
+        
+
+var state = 1;
+var sdegree = 0;
+function left(){    
+    if (state == 1){ 
+        sdegree -=.5       
+        var srotate = 'rotateZ(' + sdegree + 'deg)';
+    }
+     if (state == 2) {
+        sdegree +=.5
+        var srotate = 'rotateZ(' + sdegree + 'deg)';
+    } 
+    if (state == 1 && (sdegree <= -20) ){
+        state = 2;
+    } else if (state == 2 && (sdegree >= 20)) {
+        state = 1;       
+    }
+    myLine.style.transform = srotate;
+}
+var set = setInterval(left, 10);
+
+var myLineTo = document.createElement('div')
+            myLineTo.setAttribute('id','mylineTo');
+            myLine.insertBefore(myLineTo, myLine.firstElementChild)
+
+//document.getElementById('myDiv').appendChild(myLine);
+    </script>
+</body>
+</html>

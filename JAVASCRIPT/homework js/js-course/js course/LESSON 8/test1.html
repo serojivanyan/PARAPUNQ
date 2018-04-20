@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS Lesson 8</title>
+		<meta charset="utf8">
+        <style>
+            body{
+                background-color: black;
+                text-align: center
+            }
+            .contain{
+                background-color: white;
+                text-align: center;
+                position: relative;
+                display: inline-block
+            }
+            .arrow{
+                border: 40px solid white;
+                display: inline-block;
+            }
+            .left{
+                border-right-color: darkgrey;
+                float: left
+            }
+            .right{
+                border-left-color: darkgrey;
+                float: right;
+            }
+            .cub1{
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                background-color: black;
+                display: inline-block;
+            }
+            .cubikner{
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                background-color: white;
+                height: 80px
+            }
+            #cub1{
+                background-color: grey
+            }
+        </style>
+	</head>	
+	<body>
+        <div class="contain">
+            <img id="image" width="1000px" src="img/nkar1.jpg">
+            
+            <div class="cubikner">
+                <div class="cub1" onclick="qarakusi1()"></div>
+                <div class="cub1" onclick="qarakusi2()"></div>
+                <div class="cub1" onclick="qarakusi3()"></div>
+                <div class="cub1" onclick="qarakusi4()"></div>
+                <div class="cub1" onclick="qarakusi5()"></div>
+                <div onclick="left_arrow()" class="left arrow"></div>
+                <div onclick="right_arrow()" class="right arrow"></div>
+            </div>
+        </div>
+        
+        
+        <script>
+            var i = 0;
+            var img = ["img/nkar1.jpg", "img/nkar2.jpg", "img/nkar3.jpg", "img/nkar4.jpg", "img/nkar5.jpg",]
+            var arr_cub= document.getElementsByClassName("cub1");
+            function fral(){
+                i++;
+                if (i==5){
+                    i=0;
+                }
+                document.getElementById("image").src=img[i];
+                if(i==0){
+                    arr_cub[img.length-1].style.backgroundColor="black";
+                }
+                else
+                    arr_cub[i-1].style.backgroundColor="black";
+                arr_cub[i].style.backgroundColor="grey";
+            }
+            var timer = setInterval(fral, 2000);
+            
+            function right_arrow(){
+                i++;
+                if(i==5){
+                    i=0;
+                }
+                document.getElementById("image").src=img[i];
+                if(i==0){
+                    arr_cub[img.length-1].style.backgroundColor="black";
+                }
+                else
+                    arr_cub[i-1].style.backgroundColor="black";
+                arr_cub[i].style.backgroundColor="grey";
+            }
+            function left_arrow(){
+                i--;
+                if(i==-1){
+                    i=4;
+                }
+                document.getElementById("image").src=img[i];
+                if(i==4){
+                    arr_cub[0].style.backgroundColor="black";
+                }
+                else
+                    arr_cub[i+1].style.backgroundColor="black";
+                arr_cub[i].style.backgroundColor="grey";
+            }
+            function qarakusi1(){
+                document.getElementById("image").src=img[0];
+                arr_cub[i].style.backgroundColor="black";
+                arr_cub[0].style.backgroundColor="grey";
+                i=0;
+            }
+            function qarakusi2(){
+                document.getElementById("image").src=img[1];
+                arr_cub[i].style.backgroundColor="black";
+                arr_cub[1].style.backgroundColor="grey";
+                i=1;
+            }
+            function qarakusi3(){
+                document.getElementById("image").src=img[2];
+                arr_cub[i].style.backgroundColor="black";
+                arr_cub[2].style.backgroundColor="grey";
+                i=2;
+            }
+            function qarakusi4(){
+                document.getElementById("image").src=img[3];
+                arr_cub[i].style.backgroundColor="black";
+                arr_cub[3].style.backgroundColor="grey";
+                i=3;
+            }
+            function qarakusi5(){
+                document.getElementById("image").src=img[4];
+                arr_cub[i].style.backgroundColor="black";
+                arr_cub[4].style.backgroundColor="grey";
+                i=4;
+            }
+        </script>
+	</body>	
+</html>	

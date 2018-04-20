@@ -1,0 +1,13 @@
+*
+{
+	margin:0;
+	padding:0;
+}
+.div1
+{
+	width: 600px;
+	background-color: grey;
+	height:500px;
+	text-align: justify;
+	margin:auto;
+}

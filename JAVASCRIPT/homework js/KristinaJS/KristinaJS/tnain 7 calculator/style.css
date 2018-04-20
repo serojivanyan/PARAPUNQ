@@ -1,0 +1,16 @@
+
+
+#inp {
+    width: 246px;
+    padding: 27px;
+    height: 40px;
+    font-size: 60px;
+    background-color: black;
+    color: white;
+}
+
+.but {
+    padding: 2px;
+    width: 72px;
+    font-size: 60px;
+}

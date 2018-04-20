@@ -1,0 +1,59 @@
+
+
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+        <meta charset="utf-8">
+        <script type="text/javascript" src='new.js'></script>
+        <style>
+.container{
+	width:800px;
+	height:400px;
+	padding:20px;
+	border:1px solid gray;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+  background: black;
+}
+.image-slider-wrapper{
+	overflow: hidden;
+}
+#image_slider{
+	position: relative;
+	overflow: hidden;
+	height: 280px;
+	padding:0;
+	left:0;
+}
+#image_slider li{
+	position:relative;
+	max-width: 100%;
+	float:left;
+	list-style: none;
+	left: 0;
+}
+img{
+    width: 800px;
+    height: auto;
+}
+        </style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="image-slider-wrapper">
+				<ul id="image_slider">
+					<li><img src="1.jpg"></li>
+					<li><img src="2.jpg"></li>
+					<li><img src="3.jpg"></li>
+					<li><img src="4.jpg"></li>
+					<li><img src="5.jpg"></li>
+				</ul>			
+				<div class="pager">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

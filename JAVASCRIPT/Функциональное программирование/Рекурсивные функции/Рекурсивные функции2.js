@@ -1,0 +1,49 @@
+// 1.unenq funkcia vory stanum e parametr n ev tpum e 1ic minchev ayd tivy  (rekursiayov )
+
+
+
+
+
+
+
+
+
+
+// 2.unenq funkcia vory stanum e erku parametr a ev b ev tpum e a-ic b tvery hertov (rekursiayov )
+
+
+
+
+
+
+
+
+
+
+// 3.unenq funkcia vory stanum e parametr n ev hashvum e 1ic minchev n tveri gumary (rekursiayov )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 4.unenq funkcia vory stanum e parametr n ev tpum e n-i tvansahnery (rekursiayov )
+
+
+
+
+
+
+
+
+
+
