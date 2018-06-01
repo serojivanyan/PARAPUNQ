@@ -1,3 +1,0 @@
-hello world 
-Writing file running 
-writing file finished
